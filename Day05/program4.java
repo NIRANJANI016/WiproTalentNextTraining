@@ -1,43 +1,55 @@
-import java.io.*;
-
-import java.util.*;
-
-// Read only region start
-
-class UserMainCode
+int totalHillWeight(int input1,int input2,int input3)
 
 {
 
-public int nonRepeatDigitsCount(int input1){
-
 // Read only region end
+// Write code here
+int sum=0,i,j;
 
-int c=0,r,i;
+for(i=0;i<input1;i++)
 
-int h[]=new int[10];
+{
 
-while(input1>0){
+for(j=0;j<=i;j++)
 
-r=input1%10;
+sum+=input2;
 
-h[r]++;
+input2=input2+input3;
 
-input1=input1/10;
-
-}
-
-for(i=0;i<10;i++){
-
-if(h[i]==1){
-
-c++;
+//weight=input2+input3;
 
 }
 
-}
-
-return c;
+return sum;
 
 }
 
+26.Return second word in Uppercase https://tests.mettl.com/authenticateKey/4a72723f
+
+wipro technologies bangalore
+
+o/p:TECHNOLOGIES
+
+public class UserMainCode
+
+{
+
+public string secondWordUpperCase(string input1)
+
+{
+
+String s[]=input1.split(" ");
+
+if(s.length==1)
+
+return "LESS";
+
+String s1=s[1];
+
+s1=s1.toUpperCase();
+
+return s1;
+
 }
+
+} 
